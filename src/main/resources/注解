@@ -1,0 +1,2 @@
+1 Autowired 与 Resource  区别
+Autowired：由spring提供的，Resource是J2EE 提供的，基于jdk1.6
