@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mall.dao.SeckillOrderMapper">
+    <insert id="insertOrder" parameterType="com.example.mall.domain.SeckillOrder">
+        insert into seckill_order values(default,#{orderNo},#{tradeNo},#{orderStatus},#{userId},#{createTime})
+    </insert>
+    <select id="findbyOrderNo"  resultType="com.example.mall.domain.SeckillOrder">
+        select * from seckill_order where order_no = #{orderNo}
+    </select>
+</mapper>

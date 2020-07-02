@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mall.dao.SeckillActivityMapper">
+    <select id="findUnstartSeckill" resultType="com.example.mall.domain.SeckillActivity">
+        select * from seckill_activity where now() between start_time and end_time and status=0
+    </select>
+    <update id="update" parameterType="com.example.mall.domain.SeckillActivity">
+        update seckill_activity set status = #{status} where id = #{id}
+    </update>
+
+    <select id="findById" resultType="com.example.mall.domain.SeckillActivity">
+        select * from seckill_activity where id=#{id}
+    </select>
+
+    <select id="selectEndSeckill" resultType="com.example.mall.domain.SeckillActivity">
+        select * from seckill_activity where now()> end_time and status = 1
+    </select>
+</mapper>
