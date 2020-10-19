@@ -33,11 +33,11 @@ public class SmsCodeUtil {
     /**
      * 自己注册生成的
      */
-    private static final String ACCESS_KEY_ID = "LTAIcd6y20YnsKBG"; 
+    private static final String ACCESS_KEY_ID = "自己注册生成的";
     /**
      * 自己注册生成的
      */
-    private static final String ACCESS_KEY_SECRET = "lfSFOfcQJeMO5vbKsNLvlW4P9JRHM8";
+    private static final String ACCESS_KEY_SECRET = "自己注册生成的";
    /**
     * 
     * <B>方法名称：</B>sendSmCode <BR>
