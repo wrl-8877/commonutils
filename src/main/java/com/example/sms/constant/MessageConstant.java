@@ -38,11 +38,11 @@ public class MessageConstant {
 	/**
 	 * 短信平台注册生成的
 	 */
-	public static  final String ACCESSKEYID ="短信平台注册生成的";
+	public static  final String ACCESSKEYID ="";
 	/**
 	 * 短信平台注册生成的
 	 */
-	public static  final String ACCESSKEYSECRET = "短信平台注册生成的";
+	public static  final String ACCESSKEYSECRET = "";
 	
 	/**
 	 * 短信通知签名
